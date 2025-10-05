@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Raphael Oliveira - Desenvolvedor Front-End especializado em interfaces modernas, responsivas e de alta performance."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Raphael Oliveira | Portfólio</title>
+  </head>
+
+  <body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+      <div class="nav-left">
+        <div class="logo">Raphael Oliveira</div>
+      </div>
+      <div class="nav-center">
+        <ul class="menu">
+          <li><a href="#inicio" class="menu-link">Início</a></li>
+          <li><a href="#sobre" class="menu-link">Sobre</a></li>
+          <li><a href="#projetos" class="menu-link">Projetos</a></li>
+          <li><a href="#contato" class="menu-link">Contato</a></li>
+        </ul>
+      </div>
+
+      <div
+        class="hamburguer"
+        onclick="document.querySelector('.menu').classList.toggle('ativo')"
+      >
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+      <img
+        src="./img/foto-perfil.jpg"
+        alt="Foto de Raphael Oliveira, desenvolvedor front-end"
+        class="foto-perfil"
+      />
+      <h1>Raphael Oliveira</h1>
+      <p class="cabecalho-sub">Desenvolvedor Front-End</p>
+    </main>
+
+    <section id="sobre">
+      <h2 class="titulo">Sobre Mim</h2>
+      <div class="sobre-caixa">
+        <p>
+          Sou desenvolvedor front-end apaixonado por criar interfaces modernas,
+          funcionais e responsivas. Trabalho com
+          <span>HTML, CSS, JavaScript e React</span>&nbsp; sempre buscando
+          melhorar a experiência do usuário e otimizar a performance das
+          aplicações.
+        </p>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2 class="titulo">Meus Projetos</h2>
+      <div class="projetos-caixa">
+        <a
+          href="https://oraphaelautomacao.github.io/catalogo-de-produtos"
+          target="_blank"
+          class="projetos-card"
+        >
+          <img
+            src="./img/projeto-1.jpg"
+            alt="Catálogo de Produtos Online"
+            class="projetos-imagem"
+          />
+          <div class="projetos-texto-caixa">
+            <h3>Projeto 1 - Catálogo de Produtos Online</h3>
+            <p>
+              Focado em revenda de peças e acessórios para celular (iPhone e
+              Android).
+            </p>
+            <span
+              href="https://oraphaelautomacao.github.io/catalogo-de-produtos"
+              class="botao-projeto"
+              target="_blank"
+              >Ver Projeto</span
+            >
+          </div>
+        </a>
+        <a
+          href="https://oraphaelautomacao.github.io/catalogo-de-produtos"
+          target="_blank"
+          class="projetos-card">
+          <img
+            src="./img/projeto-2.jpg"
+            alt="Projeto em desenvolvimento"
+            class="projetos-imagem"
+          />
+          <div class="projetos-texto-caixa">
+            <h3>Projeto 2</h3>
+            <p>Projeto em desenvolvimento...</p>
+            <span href="#" class="botao-projeto" target="_blank">Ver Projeto</span>
+          </div>
+        </a>
+        <a
+          href="https://oraphaelautomacao.github.io/catalogo-de-produtos"
+          target="_blank"
+          class="projetos-card">
+          <img
+            src="./img/projeto-3.jpg"
+            alt="Projeto em desenvolvimento"
+            class="projetos-imagem"
+          />
+          <div class="projetos-texto-caixa">
+            <h3>Projeto 3</h3>
+            <p>Projeto em desenvolvimento...</p>
+            <span href="#" class="botao-projeto" target="_blank">Ver Projeto</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2 class="titulo">Entre em Contato</h2>
+      <form id="formulario" class="contato-form" onsubmit="enviarWhats(event)">
+        <input id="nome" class="campo-form" placeholder="Seu nome" required />
+        <textarea
+          id="mensagem"
+          class="campo-form"
+          placeholder="Digite sua mensagem"
+          rows="6"
+          required
+        ></textarea>
+        <button type="submit" class="botao-form">Enviar WhatsApp</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
